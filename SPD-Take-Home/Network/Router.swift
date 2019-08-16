@@ -42,8 +42,8 @@ enum Router {
     var params: [URLQueryItem] {
         switch self {
         case .getWeatherData:
-            return [URLQueryItem(name: "lat", value: "37.55"),
-                    URLQueryItem(name: "lon", value: "122.34"),
+            return [URLQueryItem(name: "lat", value: "37.7749"),
+                    URLQueryItem(name: "lon", value: "-122.4194"),
                     URLQueryItem(name: "units", value: "imperial"),
                     URLQueryItem(name: "APPID", value: "bc10a20f1155b39c833a07e803842cb8")]
         }

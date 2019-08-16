@@ -10,6 +10,8 @@
 		8D4118622305C4360036DCB6 /* ServiceLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4118612305C4360036DCB6 /* ServiceLayer.swift */; };
 		8D4118642305CFE60036DCB6 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4118632305CFE60036DCB6 /* Router.swift */; };
 		8D4118662305E11E0036DCB6 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4118652305E11E0036DCB6 /* WeatherModel.swift */; };
+		8D411868230628030036DCB6 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D411867230628030036DCB6 /* HomeView.swift */; };
+		8D41186B2306285B0036DCB6 /* HomeViewConstraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D41186A2306285B0036DCB6 /* HomeViewConstraints.swift */; };
 		8D992A0122F353930013584E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D992A0022F353930013584E /* AppDelegate.swift */; };
 		8D992A0322F353930013584E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D992A0222F353930013584E /* ViewController.swift */; };
 		8D992A0622F353930013584E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D992A0422F353930013584E /* Main.storyboard */; };
@@ -33,6 +35,8 @@
 		8D4118612305C4360036DCB6 /* ServiceLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceLayer.swift; sourceTree = "<group>"; };
 		8D4118632305CFE60036DCB6 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		8D4118652305E11E0036DCB6 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		8D411867230628030036DCB6 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		8D41186A2306285B0036DCB6 /* HomeViewConstraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewConstraints.swift; sourceTree = "<group>"; };
 		8D9929FD22F353930013584E /* SPD-Take-Home.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SPD-Take-Home.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D992A0022F353930013584E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D992A0222F353930013584E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -64,6 +68,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D4118692306284B0036DCB6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8D41186A2306285B0036DCB6 /* HomeViewConstraints.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		8D41186C230628890036DCB6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				8D4118632305CFE60036DCB6 /* Router.swift */,
+				8D4118612305C4360036DCB6 /* ServiceLayer.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		8D41186D230628A20036DCB6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D4118652305E11E0036DCB6 /* WeatherModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8D41186E230628AA0036DCB6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D411867230628030036DCB6 /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D41186F230628C70036DCB6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8D992A0222F353930013584E /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		8D9929F422F353930013584E = {
 			isa = PBXGroup;
 			children = (
@@ -85,16 +130,17 @@
 		8D9929FF22F353930013584E /* SPD-Take-Home */ = {
 			isa = PBXGroup;
 			children = (
+				8D41186F230628C70036DCB6 /* Controller */,
+				8D41186E230628AA0036DCB6 /* View */,
+				8D41186D230628A20036DCB6 /* Model */,
+				8D41186C230628890036DCB6 /* Network */,
+				8D4118692306284B0036DCB6 /* Extension */,
 				8D992A0022F353930013584E /* AppDelegate.swift */,
-				8D992A0222F353930013584E /* ViewController.swift */,
 				8D992A0422F353930013584E /* Main.storyboard */,
 				8D992A0A22F353950013584E /* Assets.xcassets */,
 				8D992A0C22F353950013584E /* LaunchScreen.storyboard */,
 				8D992A0F22F353950013584E /* Info.plist */,
 				8D992A0722F353930013584E /* SPD_Take_Home.xcdatamodeld */,
-				8D4118612305C4360036DCB6 /* ServiceLayer.swift */,
-				8D4118632305CFE60036DCB6 /* Router.swift */,
-				8D4118652305E11E0036DCB6 /* WeatherModel.swift */,
 			);
 			path = "SPD-Take-Home";
 			sourceTree = "<group>";
@@ -209,7 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D41186B2306285B0036DCB6 /* HomeViewConstraints.swift in Sources */,
 				8D4118622305C4360036DCB6 /* ServiceLayer.swift in Sources */,
+				8D411868230628030036DCB6 /* HomeView.swift in Sources */,
 				8D992A0322F353930013584E /* ViewController.swift in Sources */,
 				8D4118642305CFE60036DCB6 /* Router.swift in Sources */,
 				8D992A0122F353930013584E /* AppDelegate.swift in Sources */,
